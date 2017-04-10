@@ -61,12 +61,12 @@ public class playerHealth : MonoBehaviour {
 
     void createElementalists ()
     {
-        eleStat.Add(new elementalistStats("Elementalist 1", 1));
-        eleStat.Add(new elementalistStats("Elementalist 2", 2));
-        eleStat.Add(new elementalistStats("Elementalist 3", 3));
-        eleStat.Add(new elementalistStats("Elementalist 4", 4));
-        eleStat.Add(new elementalistStats("Elementalist 5", 5));
-        eleStat.Add(new elementalistStats("Elementalist 6", 6));
+        eleStat.Add(new elementalistStats("Elementalist 1", 10));
+        eleStat.Add(new elementalistStats("Elementalist 2", 10));
+        eleStat.Add(new elementalistStats("Elementalist 3", 10));
+        eleStat.Add(new elementalistStats("Elementalist 4", 10));
+        eleStat.Add(new elementalistStats("Elementalist 5", 10));
+        eleStat.Add(new elementalistStats("Elementalist 6", 10));
     }
 
 

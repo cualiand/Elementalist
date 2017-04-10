@@ -367,7 +367,6 @@ public class researchZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, I
             {
                 case 0:
                     canAir = true;
-                    Debug.Log("giveweirdair");
                     airInt++;
                     break;
                 case 2:
@@ -390,53 +389,6 @@ public class researchZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, I
         }
         else if (researchElementZone.Count == 2)
         {
-            /*
-            int firstElement;
-            int secondElement;
-            firstElement = stringToType(researchElementZone[0]);
-            secondElement = stringToType(researchElementZone[1]);
-            ElementalType firstComparison = (ElementalType)firstElement;
-            ElementalType secondComparison = (ElementalType)secondElement;
-            Debug.Log("firstelement=" + firstComparison + "+" + "secondelement=" + secondComparison);
-
-            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Air && secondComparison == ElementalType.Water))
-            {
-                canIce = true;
-                airInt++; waterInt++;
-                Debug.Log("we have ice");
-            }
-            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Earth) || (secondComparison == ElementalType.Earth && secondComparison == ElementalType.Air))
-            {
-                canSand = true;
-                airInt++; earthInt++;
-                Debug.Log("we have sand");
-            }
-            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Fire) || (secondComparison == ElementalType.Fire && secondComparison == ElementalType.Water))
-            {
-                canLightning = true;
-                airInt++; fireInt++;
-                Debug.Log("we have lightning");
-            }
-            if ((firstComparison == ElementalType.Earth && firstComparison == ElementalType.Fire) || (secondComparison == ElementalType.Fire && secondComparison == ElementalType.Earth))
-            {
-                canLava = true;
-                earthInt++; fireInt++;
-                Debug.Log("we have lava");
-            }
-            if ((firstComparison == ElementalType.Earth && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Water && secondComparison == ElementalType.Earth))
-            {
-                canNature = true;
-                earthInt++; waterInt++;
-                Debug.Log("we have nature");
-            }
-            if ((firstComparison == ElementalType.Fire && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Water && secondComparison == ElementalType.Fire))
-            {
-                canSteam = true;
-                fireInt++; waterInt++;
-                Debug.Log("we have steam");
-            }
-            */
-
             foreach (string element in researchElementZone)
             {
                 //Debug.Log("searching single element list with double element");
@@ -813,6 +765,53 @@ switch case int style code
                 simulatedResearchElementZoneCount++;
                 break;
         }
+
+ /*
+            int firstElement;
+            int secondElement;
+            firstElement = stringToType(researchElementZone[0]);
+            secondElement = stringToType(researchElementZone[1]);
+            ElementalType firstComparison = (ElementalType)firstElement;
+            ElementalType secondComparison = (ElementalType)secondElement;
+            Debug.Log("firstelement=" + firstComparison + "+" + "secondelement=" + secondComparison);
+
+            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Air && secondComparison == ElementalType.Water))
+            {
+                canIce = true;
+                airInt++; waterInt++;
+                Debug.Log("we have ice");
+            }
+            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Earth) || (secondComparison == ElementalType.Earth && secondComparison == ElementalType.Air))
+            {
+                canSand = true;
+                airInt++; earthInt++;
+                Debug.Log("we have sand");
+            }
+            if ((firstComparison == ElementalType.Air && firstComparison == ElementalType.Fire) || (secondComparison == ElementalType.Fire && secondComparison == ElementalType.Water))
+            {
+                canLightning = true;
+                airInt++; fireInt++;
+                Debug.Log("we have lightning");
+            }
+            if ((firstComparison == ElementalType.Earth && firstComparison == ElementalType.Fire) || (secondComparison == ElementalType.Fire && secondComparison == ElementalType.Earth))
+            {
+                canLava = true;
+                earthInt++; fireInt++;
+                Debug.Log("we have lava");
+            }
+            if ((firstComparison == ElementalType.Earth && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Water && secondComparison == ElementalType.Earth))
+            {
+                canNature = true;
+                earthInt++; waterInt++;
+                Debug.Log("we have nature");
+            }
+            if ((firstComparison == ElementalType.Fire && firstComparison == ElementalType.Water) || (secondComparison == ElementalType.Water && secondComparison == ElementalType.Fire))
+            {
+                canSteam = true;
+                fireInt++; waterInt++;
+                Debug.Log("we have steam");
+            }
+            
 
 
 bug- pressing cancel with leftover elements in pool results in leftovers being deleted

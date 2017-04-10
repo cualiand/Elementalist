@@ -41,7 +41,7 @@ public class deckManager : MonoBehaviour {
 
     }
 
-    void setSwitchCase()
+    public void setSwitchCase()
     {
         if (deck1List[0] == ("Air"))
         {
@@ -160,7 +160,7 @@ public class deckManager : MonoBehaviour {
             case 10:
                 Image natureImage = Instantiate(cardManager.GetComponent<card>().natureImage, cardCanvas.transform.FindChild("Hand"));
                 natureImage.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-                Debug.Log("drawing natureimage");
+                //Debug.Log("drawing natureimage");
                 break;
             case 11:
                 Image sandImage = Instantiate(cardManager.GetComponent<card>().sandImage, cardCanvas.transform.FindChild("Hand"));
